@@ -85,24 +85,24 @@ same for  #Zeros = 7 & #Ones = 10
 ## CODE:  (pure standard C++ (no GCC-only headers like <bits/stdc++.h> ---------> use GNU g++ 13.2))
 
 #####################################################################################################################
+```cpp
+#include <iostream>
+using namespace std;
 
-* #include <iostream>
-* using namespace std;
-
-* void solve() {
-*    int n;
-*    cin >> n;
-*    int score = 0;
-*    int temp;
-*    for (int i = 0; i < n; i++) {
-*       cin >> temp;
-*        if (temp == 0) 
-*            score++;
-*        else 
-*            score += temp;
-*    }
-*    cout << score << '\n';
-*}
+void solve() {
+    int n;
+    cin >> n;
+    int score = 0;
+    int temp;
+    for (int i = 0; i < n; i++) {
+        cin >> temp;
+        if (temp == 0) 
+            score++;
+        else 
+            score += temp;
+    }
+    cout << score << '\n';
+}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -114,7 +114,7 @@ int main() {
     }
     return 0;
 }
-
+```
 #####################################################################################################################
 * okay so coming the above code and why it works in comparison to the below code 
 * this code follows a simple rule, before that lets say we have S = <0,1,1>
@@ -138,7 +138,7 @@ ans as we need max
 
 
 #####################################################################################################################
-
+```cpp
 * #include<bits/stdc++.h> 
 * using namespace std;
 * #define ll long long
@@ -169,7 +169,7 @@ ans as we need max
             cout<< ans << endl;
      }
 * }
-
+```
 #####################################################################################################################
 for this I were basically thinking like this:
 Pair each 0 with a 1.
