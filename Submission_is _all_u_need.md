@@ -86,23 +86,23 @@ same for  #Zeros = 7 & #Ones = 10
 
 #####################################################################################################################
 
-#include <iostream>
-using namespace std;
+* #include <iostream>
+* using namespace std;
 
-void solve() {
-    int n;
-    cin >> n;
-    int score = 0;
-    int temp;
-    for (int i = 0; i < n; i++) {
-        cin >> temp;
-        if (temp == 0) 
-            score++;
-        else 
-            score += temp;
-    }
-    cout << score << '\n';
-}
+* void solve() {
+*    int n;
+*    cin >> n;
+*    int score = 0;
+*    int temp;
+*    for (int i = 0; i < n; i++) {
+*       cin >> temp;
+*        if (temp == 0) 
+*            score++;
+*        else 
+*            score += temp;
+*    }
+*    cout << score << '\n';
+*}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -139,14 +139,14 @@ ans as we need max
 
 #####################################################################################################################
 
-#include<bits/stdc++.h>
-using namespace std;
-#define ll long long
-int main(){
-    ll t, n, i, j, z, o, ans; 
-    cin >> t;
-    // t -> test cases
-    for(;t--;){
+* #include<bits/stdc++.h> 
+* using namespace std;
+* #define ll long long
+* int main(){
+*    ll t, n, i, j, z, o, ans; 
+*    cin >> t;
+*    // t -> test cases
+*    for(;t--;){
         cin>>n; // size of array input 
         ans=z=o=0;
         ll a[n]; // initialized the size of array
@@ -165,10 +165,10 @@ int main(){
             if(z>o){ //now correct
                 //if #o's greater than 1 should be added that many times
                 ans = ans + z-o;
-            }
+          }
             cout<< ans << endl;
-    }
-}
+     }
+* }
 
 #####################################################################################################################
 for this I were basically thinking like this:
